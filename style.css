@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 50px;
+    background-color: #cc7673;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav ul li {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-1 {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #E5DC9D, #F4B9D7);
+}
+
+.left-section-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px 0px 100px;
+    gap: 80px;
+}
+
+.left-section-1 h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left-section-1 p {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.9rem;
+}
+
+.click-btn {
+    width: 250px;
+    border: none;
+    background-color: #cc7673;
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.right-section-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.right-section-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(to bottom right, #E5DC9D, #F4C1CD, #F4B9D7);
+}
+
+.left-section-2,
+.right-section-2 {
+    height: 100%;
+}
+
+.left-section-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.left-section-2 span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-section-2 span img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.left-section-2 img {
+    height: 520px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.right-section-2 {
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #cc7673;
+    padding: 40px;
+}
+
+.right-section-2 h3 {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.right-section-2 h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+}
+
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ************************************************* */
+.menu-bar img {
+    display: none;
+}
+
+.menu-bar img {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    height: 42px;
+    width: 42px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    .menu {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .menu-bar img {
+        display: block;
+    }
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .left-section-1 {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .left-section-1 h1 {
+        font-size: 2rem;
+    }
+
+    .left-section-1 p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .click-btn {
+        width: 100%;
+    }
+
+    .right-section-1 img {
+        padding: 10px;
+    }
+
+    .section-2 {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left-section-2 {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .left-section-2 span img,
+    .left-section-2 img {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .right-section-2 {
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 767px)and (max-width: 1023px) {
+    .menu {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .menu-bar img {
+        display: block;
+    }
+
+    .right-section-1 img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        padding-right: 10px;
+    }
+
+    .section-2 {
+        padding-top: 80px;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right-section-2 {
+        margin-bottom: 80px;
+        width: 570px;
+    }
+}
+
+@media screen and (min-width: 1024px)and (max-width: 1439px) {
+
+    .right-section-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding-right: 20px;
+    }
+
+    .section-2 {
+        padding-top: 50px;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right-section-2 {
+        margin-bottom: 80px;
+        width: 570px;
+    }
+}
